@@ -20,8 +20,8 @@ const today = new Date();
 let isHoliday = false;
 let holidayName = null;
 
-holidays.map(date => {
-  if (today.toLocaleDateString === date.date) {
+holidays.map(holiday => {
+  if (today.toLocaleDateString === holiday.date) {
     isHoliday = true;
     holidayName = date.name;
   }
